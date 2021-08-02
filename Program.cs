@@ -4,14 +4,15 @@ namespace Objectorianted
 {
     class Program
     {
+        const string INVENTORY_JSON = @"V:\BridgeLabz\ObjectOrientedProgramming\ObjectOrientedProgram\InventoryManagement\Inventory.json";
         static void Main(string[] args)
         {
-            const string INVENTORY_JSON = D:\Oops\Objectorianted\Oops\Inventory managment\
-            static void Main(string[] args)
-            {
-                InventoryMain main = new InventoryMain();
-                main.DisplayData(INVENTORY_JSON);
-            }
+            InventoryManager inventoryManager = new InventoryManager();
+            inventoryManager.DisplayData(INVENTORY_JSON);
         }
+
+
+
     }
-}
+}   
+
